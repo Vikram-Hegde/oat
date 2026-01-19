@@ -67,8 +67,8 @@
     --lt-muted-foreground: rgb(113 113 122);
     --lt-accent: rgb(244 244 245);
     --lt-accent-foreground: rgb(24 24 27);
-    --lt-destructive: rgb(239 68 68);
-    --lt-destructive-foreground: rgb(250 250 250);
+    --lt-danger: rgb(239 68 68);
+    --lt-danger-foreground: rgb(250 250 250);
     --lt-success: rgb(34 197 94);
     --lt-success-foreground: rgb(250 250 250);
     --lt-warning: rgb(234 179 8);
@@ -144,8 +144,8 @@
     --lt-muted-foreground: rgb(161 161 170);
     --lt-accent: rgb(39 39 42);
     --lt-accent-foreground: rgb(250 250 250);
-    --lt-destructive: rgb(127 29 29);
-    --lt-destructive-foreground: rgb(250 250 250);
+    --lt-danger: rgb(127 29 29);
+    --lt-danger-foreground: rgb(250 250 250);
     --lt-border: rgb(39 39 42);
     --lt-input: rgb(39 39 42);
     --lt-ring: rgb(212 212 216);
@@ -165,8 +165,8 @@
       --lt-muted-foreground: rgb(161 161 170);
       --lt-accent: rgb(39 39 42);
       --lt-accent-foreground: rgb(250 250 250);
-      --lt-destructive: rgb(127 29 29);
-      --lt-destructive-foreground: rgb(250 250 250);
+      --lt-danger: rgb(127 29 29);
+      --lt-danger-foreground: rgb(250 250 250);
       --lt-border: rgb(39 39 42);
       --lt-input: rgb(39 39 42);
       --lt-ring: rgb(212 212 216);
@@ -428,12 +428,12 @@
       }
     }
 
-    &.destructive {
-      background-color: var(--lt-destructive);
-      color: var(--lt-destructive-foreground);
+    &.danger {
+      background-color: var(--lt-danger);
+      color: var(--lt-danger-foreground);
 
       &:hover {
-        background-color: rgb(from var(--lt-destructive) r g b / 0.9);
+        background-color: rgb(from var(--lt-danger) r g b / 0.9);
       }
     }
 
@@ -546,10 +546,10 @@
     }
 
     &[aria-invalid="true"], &:user-invalid {
-      border-color: var(--lt-destructive);
+      border-color: var(--lt-danger);
 
       &:focus {
-        box-shadow: 0 0 0 2px rgb(from var(--lt-destructive) r g b / 0.2);
+        box-shadow: 0 0 0 2px rgb(from var(--lt-danger) r g b / 0.2);
       }
     }
   }
@@ -723,7 +723,7 @@
     }
 
     & > .error, & > [data-error] {
-      color: var(--lt-destructive);
+      color: var(--lt-danger);
     }
 
     & > .hint, & > [data-hint] {
@@ -951,12 +951,12 @@
     border-radius: var(--lt-radius);
     font-size: var(--lt-text-sm);
 
-    &[data-variant="error"], &[data-variant="destructive"] {
-      border-color: rgb(from var(--lt-destructive) r g b / 0.5);
-      color: var(--lt-destructive);
+    &[data-variant="error"], &[data-variant="danger"] {
+      border-color: rgb(from var(--lt-danger) r g b / 0.5);
+      color: var(--lt-danger);
 
       & a {
-        color: var(--lt-destructive);
+        color: var(--lt-danger);
       }
     }
 
@@ -1003,9 +1003,9 @@
       border: 1px solid var(--lt-border);
     }
 
-    &.destructive {
-      background-color: var(--lt-destructive);
-      color: var(--lt-destructive-foreground);
+    &.danger {
+      background-color: var(--lt-danger);
+      color: var(--lt-danger-foreground);
     }
 
     &.success {
@@ -1249,8 +1249,8 @@
       border-color: var(--lt-success);
     }
 
-    &[data-variant="error"], &[data-variant="destructive"] {
-      border-color: var(--lt-destructive);
+    &[data-variant="error"], &[data-variant="danger"] {
+      border-color: var(--lt-danger);
     }
 
     &[data-variant="warning"] {

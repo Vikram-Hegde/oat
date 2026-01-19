@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     demo.innerHTML = `
       <lm-tabs>
         <div role="tablist">
-          <button role="tab">Preview</button>
-          <button role="tab">Code</button>
+          <button role="tab">⧉ Preview</button>
+          <button role="tab">{} Code</button>
         </div>
         <div role="tabpanel">
           <div class="demo-box"><div class="demo-content">${rawHTML}</div></div>

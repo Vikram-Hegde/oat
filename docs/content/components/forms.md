@@ -62,7 +62,7 @@ Form elements are styled automatically. Wrap inputs in `<label>` for proper asso
 
 ### Input group
 
-Use `.input-group` on a fieldset to combine inputs with buttons or labels.
+Use `.input-group` on a `<fieldset>` to combine inputs with buttons or labels.
 
 {% demo() %}
 ```html

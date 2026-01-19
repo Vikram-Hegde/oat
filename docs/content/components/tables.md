@@ -4,7 +4,7 @@ weight = 5
 description = "Data tables with thead, tbody. Styled automatically."
 +++
 
-Tables are styled by default. Use semantic `<thead>` and `<tbody>`.
+Tables are styled by default. Use `<thead>` and `<tbody>` tags.
 
 {% demo() %}
 ```html

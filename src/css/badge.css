@@ -22,9 +22,9 @@
       border: 1px solid var(--lm-border);
     }
 
-    &.destructive {
-      background-color: var(--lm-destructive);
-      color: var(--lm-destructive-foreground);
+    &.danger {
+      background-color: var(--lm-danger);
+      color: var(--lm-danger-foreground);
     }
 
     &.success {

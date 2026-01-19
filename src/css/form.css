@@ -57,10 +57,10 @@
     }
 
     &[aria-invalid="true"], &:user-invalid {
-      border-color: var(--lm-destructive);
+      border-color: var(--lm-danger);
 
       &:focus {
-        box-shadow: 0 0 0 2px rgb(from var(--lm-destructive) r g b / 0.2);
+        box-shadow: 0 0 0 2px rgb(from var(--lm-danger) r g b / 0.2);
       }
     }
   }
@@ -302,7 +302,7 @@
     }
 
     & > .error, & > [data-error] {
-      color: var(--lm-destructive);
+      color: var(--lm-danger);
     }
 
     & > .hint, & > [data-hint] {

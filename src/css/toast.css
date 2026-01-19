@@ -15,8 +15,8 @@
       border-color: var(--lm-success);
     }
 
-    &[data-variant="error"], &[data-variant="destructive"] {
-      border-color: var(--lm-destructive);
+    &[data-variant="error"], &[data-variant="danger"] {
+      border-color: var(--lm-danger);
     }
 
     &[data-variant="warning"] {

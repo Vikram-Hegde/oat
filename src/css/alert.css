@@ -9,12 +9,12 @@
     border-radius: var(--lm-radius);
     font-size: var(--lm-text-7);
 
-    &[data-variant="error"], &[data-variant="destructive"] {
-      border-color: rgb(from var(--lm-destructive) r g b / 0.5);
-      color: var(--lm-destructive);
+    &[data-variant="error"], &[data-variant="danger"] {
+      border-color: rgb(from var(--lm-danger) r g b / 0.5);
+      color: var(--lm-danger);
 
       & a {
-        color: var(--lm-destructive);
+        color: var(--lm-danger);
       }
     }
 

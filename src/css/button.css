@@ -70,13 +70,13 @@
       }
     }
 
-    &.destructive {
-      background-color: var(--lm-destructive);
-      color: var(--lm-destructive-foreground);
+    &.danger {
+      background-color: var(--lm-danger);
+      color: var(--lm-danger-foreground);
 
       &:hover:not(:disabled) {
-        background-color: color-mix(in srgb, var(--lm-destructive), black 15%);
-        color: var(--lm-destructive-foreground);
+        background-color: color-mix(in srgb, var(--lm-danger), black 15%);
+        color: var(--lm-danger-foreground);
       }
     }
 

@@ -55,7 +55,7 @@
     }
 
     &::-webkit-meter-even-less-good-value {
-      background: var(--lm-destructive);
+      background: var(--lm-danger);
     }
 
     &::-moz-meter-bar {
@@ -68,7 +68,7 @@
     }
 
     &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-      background: var(--lm-destructive);
+      background: var(--lm-danger);
     }
   }
 }
