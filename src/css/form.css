@@ -147,6 +147,12 @@
     }
   }
 
+  :is(input[type=checkbox], input[type=radio], input[type=range], select):not(:disabled),
+  label:has(input:is([type=checkbox], [type=radio]):not(:disabled)) {
+    cursor: pointer;
+  }
+
+
   input[type="range"] {
     width: 100%;
     height: var(--bar-height);

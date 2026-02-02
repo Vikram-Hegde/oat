@@ -1,5 +1,6 @@
 @layer base {
   table {
+    border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
     font-size: var(--text-7);

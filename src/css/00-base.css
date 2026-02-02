@@ -1,4 +1,18 @@
+@layer theme, base, components, animations, utilities;
+
 @layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html {
+    tab-size: 4;
+  }
+
   /* Top-layer elements don't inherit from body. Set explicitly. */
   body, dialog, [popover] {
     font-family: var(--font-sans);
@@ -10,6 +24,15 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    max-width: 100%;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -145,11 +168,6 @@
   :focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 2px;
-  }
-
-  :is(input[type=checkbox], input[type=radio], input[type=range], select):not(:disabled),
-  label:has(input:is([type=checkbox], [type=radio]):not(:disabled)) {
-    cursor: pointer;
   }
 
   :disabled {
