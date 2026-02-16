@@ -17,19 +17,18 @@
     font-weight: var(--font-medium);
     white-space: nowrap;
     background-color: transparent;
-    color: var(--muted-foreground);
+    color: var(--foreground);
     border: none;
     border-radius: calc(var(--radius-medium) - 2px);
     cursor: pointer;
     transition: background-color var(--transition-fast), color var(--transition-fast);
 
     &:hover {
-      color: var(--foreground);
+      color: var(--muted-foreground);
     }
 
     &[aria-selected="true"] {
       background-color: var(--background);
-      color: var(--foreground);
       box-shadow: var(--shadow-small);
     }
   }

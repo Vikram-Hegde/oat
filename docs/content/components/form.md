@@ -26,12 +26,15 @@ Form elements are styled automatically. Wrap inputs in `<label>` for proper asso
   </label>
 
   <div data-field>
-    <label>Country</label>
-    <select>
-      <option value="">Select a country</option>
-      <option value="us">United States</option>
-      <option value="uk">United Kingdom</option>
-      <option value="ca">Canada</option>
+    <label>Select</label>
+    <select aria-label="Select an option">
+      <option value="">Select an option</option>
+      <option value="a">Option A</option>
+      <option value="b">Option B</option>
+      <option value="c">Option C</option>
+      <option value="d">Option D</option>
+      <option value="e">Option E</option>
+      <option value="f">Option F</option>
     </select>
   </div>
 
@@ -91,7 +94,7 @@ Use `.group` on a `<fieldset>` to combine inputs with buttons or labels.
 <fieldset class="group">
   <legend>https://</legend>
   <input type="url" placeholder="subdomain">
-  <select placeholder="Select">
+  <select placeholder="Select" aria-label="Select a subdomain">
     <option>.example.com</option>
     <option>.example.net</option>
   </select>
@@ -113,8 +116,7 @@ Use `data-field="error"` on field containers to reveal and style error messages.
 ```html
 <div data-field="error">
   <label for="error-input">Email</label>
-  <input type="email" aria-invalid="true" aria-errormessage="error-input"
-    id="error-input" value="invalid-email" />
+  <input type="email" aria-invalid="true" aria-describedby="error-message" id="error-input" value="invalid-email" />
   <div id="error-message" class="error" role="status">Please enter a valid email address.</div>
 </div>
 ```
