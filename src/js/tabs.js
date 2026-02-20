@@ -39,10 +39,10 @@ class OtTabs extends OtBase {
       panel.id = panelId;
       tab.setAttribute('aria-controls', panelId);
       panel.setAttribute('aria-labelledby', tabId);
-
-      tab.addEventListener('click', this);
-      tab.addEventListener('keydown', this);
     });
+
+    tablist.addEventListener('click', this);
+    tablist.addEventListener('keydown', this);
 
     // Find initially active tab or default to first.
     const activeTab = this.#tabs.findIndex(t => t.ariaSelected === 'true');
@@ -55,6 +55,8 @@ class OtTabs extends OtBase {
   }
 
   onkeydown(e) {
+    if (!e.target.closest('[role="tab"]')) return;
+
     const next = this.keyNav(e, this.activeIndex, this.#tabs.length, 'ArrowLeft', 'ArrowRight');
     if (next >= 0) {
       this.#activate(next);
